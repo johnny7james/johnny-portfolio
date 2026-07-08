@@ -1527,3 +1527,16 @@ nav a {
     padding: 22px;
   }
 }
+
+/* V2.3 Inline professional links */
+.contact-box span a,
+.resume-contact a {
+  color: var(--silver);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.22);
+}
+
+.contact-box span a:hover,
+.resume-contact a:hover {
+  border-color: rgba(255,255,255,0.5);
+}
