@@ -1540,3 +1540,19 @@ nav a {
 .resume-contact a:hover {
   border-color: rgba(255,255,255,0.5);
 }
+
+/* V2.4 404 page */
+.not-found {
+  min-height: 55vh;
+  display: grid;
+  align-content: center;
+}
+
+.not-found h1 {
+  margin-bottom: 18px;
+}
+
+.not-found p {
+  max-width: 620px;
+  font-size: 18px;
+}

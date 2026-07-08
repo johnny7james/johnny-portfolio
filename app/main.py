@@ -52,3 +52,19 @@ async def project_detail(project_slug: str):
         )
 
     return FileResponse(project_path)
+
+
+
+@app.get("/robots.txt")
+async def robots_txt():
+    return FileResponse(STATIC_DIR / "robots.txt")
+
+
+@app.get("/sitemap.xml")
+async def sitemap_xml():
+    return FileResponse(STATIC_DIR / "sitemap.xml")
+
+
+@app.exception_handler(404)
+async def custom_404_handler(request, exc):
+    return FileResponse(TEMPLATES_DIR / "404.html", status_code=404)
