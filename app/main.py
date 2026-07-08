@@ -68,3 +68,8 @@ async def sitemap_xml():
 @app.exception_handler(404)
 async def custom_404_handler(request, exc):
     return FileResponse(TEMPLATES_DIR / "404.html", status_code=404)
+
+
+@app.get("/checklist")
+async def checklist_page():
+    return FileResponse(TEMPLATES_DIR / "checklist.html")

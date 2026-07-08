@@ -1556,3 +1556,59 @@ nav a {
   max-width: 620px;
   font-size: 18px;
 }
+
+/* V2.5 Launch checklist page */
+.checklist-page {
+  margin-top: 54px;
+}
+
+.checklist-page > p {
+  max-width: 760px;
+  font-size: 18px;
+}
+
+.checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.check-card {
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  padding: 28px;
+  background:
+    linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.032));
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(22px);
+}
+
+.check-card span {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #080a0f;
+  border-radius: 14px;
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 800;
+  background:
+    linear-gradient(145deg, #ffffff 0%, #d7d7d1 46%, #878e96 100%);
+}
+
+.check-card ul {
+  margin: 0;
+  padding-left: 21px;
+  color: var(--muted);
+  line-height: 1.9;
+}
+
+@media (max-width: 920px) {
+  .checklist-grid {
+    grid-template-columns: 1fr;
+  }
+}
