@@ -1,0 +1,14 @@
+{
+  "name": "Johnny Dietz Portfolio",
+  "short_name": "Johnny Dietz",
+  "icons": [
+    {
+      "src": "/static/assets/jd-logo-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#030407",
+  "background_color": "#030407",
+  "display": "standalone"
+}
